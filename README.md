@@ -227,11 +227,22 @@ lac(["LAC是个优秀的分词工具", "三亚是一个美丽的城市"])
 
 ## 4. Pipeline
 
+<div align="center">
+  <img src="./pipeline.png" width="800"/>
+</div>  
+
 整个系统包含一下流程：首先对pdf格式的研报拆分为图片格式，然后对每张图片进行ocr，得到结果后输入LAC分词工具提取其中出现的机构名，最后统计同一个pdf研报下机构名出现的频率，得到当前研报主要关注的机构
 
 批量统计多个研报后即可得到当前主要研究的热点领域和机构等
 
-结果图片
 
-未来todo：
 
+将数据放置在`./Research` 文件夹下，运行下列程序得到结果示例如下。
+
+```
+python test.py
+```
+
+<div align="center">
+  <img src="./img.png" width="1000"/>
+</div>  
